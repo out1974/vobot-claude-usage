@@ -1,0 +1,22 @@
+application:
+  name: Claude Usage
+  version: 1.0.0
+  description: Shows the current Claude (Anthropic) token usage plus a dashboard over the last few days. The Admin API key is stored in the app settings.
+  author: Vobot Mini Dock App
+  author_email: ""
+  bugs: ""
+  repository: ""
+  licenses: MIT
+
+attributes:
+  enable_auto_carousel: true
+
+system_requirements:
+  minimum_version: 1.1.0
+  compatible_devices:
+    - MiniDock
+
+files:
+  include:
+    - __init__.py
+    - service.py

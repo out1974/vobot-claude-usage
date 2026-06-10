@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.vobot.claude-push</string>
+
+    <!-- Edit: python path (run `which python3`), the absolute path to
+         claude_dock_push.py on THIS machine, and the env values below. -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/python3</string>
+        <string>/path/to/cloud_hub/claude_dock_push.py</string>
+    </array>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>CLAUDE_DOCK_HUB</key>
+        <string>https://hub.example.com/push</string>
+        <key>CLAUDE_DOCK_TOKEN</key>
+        <string>CHANGE-ME-LONG-RANDOM-SECRET</string>
+        <key>CLAUDE_DOCK_MACHINE</key>
+        <string>my-macbook</string>
+    </dict>
+
+    <!-- Run at login and then every 10 minutes -->
+    <key>RunAtLoad</key>
+    <true/>
+    <key>StartInterval</key>
+    <integer>600</integer>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/claude-push.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/claude-push.err.log</string>
+</dict>
+</plist>

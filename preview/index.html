@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude Usage – Preview (full-screen Claude Code)</title>
+<style>
+  :root{--code:#FF8A3D; --white:#FFFFFF; --grey:#9AA0A6; --div:#333333; --bg:#000000; --scale:2;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{background:#15171c; color:#cfd3da;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    min-height:100vh; display:flex; flex-direction:column; align-items:center;
+    justify-content:center; gap:18px; padding:28px;}
+  .bezel{background:#0a0a0a; padding:14px; border-radius:18px;
+    box-shadow:0 10px 40px rgba(0,0,0,.6), inset 0 0 0 2px #222;}
+  .screen{position:relative; overflow:hidden;
+    width:calc(320px * var(--scale)); height:calc(240px * var(--scale));
+    background:var(--bg); border-radius:6px; font-size:0;}
+  .screen *{font-size:initial;}
+  .layer{position:absolute; inset:0; width:320px; height:240px;
+    transform:scale(var(--scale)); transform-origin:top left;}
+
+  .title{position:absolute; left:8px; top:6px; font-weight:700; font-size:21px; color:var(--code);}
+  .row{position:absolute; left:8px; top:30px; display:flex; align-items:flex-end; gap:8px;}
+  .big{font-weight:800; font-size:30px; color:var(--white); line-height:1;}
+  .unit{font-size:17px; color:var(--grey); padding-bottom:2px;}
+  .io{position:absolute; left:8px; top:70px; font-size:13px; color:var(--code);}
+  .sum{position:absolute; left:8px; top:90px; font-size:13px; color:var(--grey);}
+
+  .chart{position:absolute; left:12px; top:106px; width:296px; height:110px;}
+  .grid{position:absolute; left:0; right:0; height:1px; background:var(--div);}
+  .bars{position:absolute; inset:0; display:flex; align-items:flex-end; gap:5px;}
+  .bar{flex:1; background:var(--code); border-radius:1px 1px 0 0; min-height:1px;}
+  .xl{position:absolute; bottom:2px; font-size:13px; color:var(--grey);}
+
+  .caption{max-width:640px; text-align:center; font-size:13px; line-height:1.5; color:#8a8f98;}
+  .caption b{color:#cfd3da;}
+  .pill{display:inline-block; background:#23262d; color:#cfd3da; border-radius:999px;
+        padding:2px 10px; font-size:12px; margin:0 3px;}
+</style>
+</head>
+<body>
+  <div class="bezel">
+    <div class="screen">
+      <div class="layer">
+        <div class="title">Claude Code</div>
+        <div class="row"><span class="big">26.28M</span><span class="unit">today</span></div>
+        <div class="io">In 26.09M&nbsp;&nbsp;Out 194.9K</div>
+        <div class="sum">7d total 79.12M&nbsp;&nbsp;/&nbsp;&nbsp;11.30M per day</div>
+        <div class="chart">
+          <div class="grid" style="top:0%"></div>
+          <div class="grid" style="top:33%"></div>
+          <div class="grid" style="top:66%"></div>
+          <div class="grid" style="top:99%"></div>
+          <div class="bars">
+            <div class="bar" style="height:1px"></div>
+            <div class="bar" style="height:1px"></div>
+            <div class="bar" style="height:1px"></div>
+            <div class="bar" style="height:1px"></div>
+            <div class="bar" style="height:87%"></div>
+            <div class="bar" style="height:8.3%"></div>
+            <div class="bar" style="height:47.4%"></div>
+          </div>
+        </div>
+        <div class="xl" style="left:12px">04 Jun</div>
+        <div class="xl" style="right:12px">Today</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="caption">
+    <b>Design preview</b> — full-screen Claude Code panel (example data; Admin key left empty).
+    Add an Admin key in settings to also get the API panel below.
+    <span class="pill">today 26.28M</span>
+    <span class="pill">7d 79.12M</span>
+    <span class="pill">subscription only · no API key needed</span>
+  </div>
+</body>
+</html>

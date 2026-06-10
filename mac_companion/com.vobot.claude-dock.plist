@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Reference only. "Install Background Service.command" GENERATES this file
+     automatically at ~/Library/LaunchAgents/ with your real $HOME, and copies the
+     server to ~/.claude-dock/ (macOS blocks background services from reading
+     ~/Documents). Replace YOURNAME below only if you create it by hand. -->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.vobot.claude-dock</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/python3</string>
+        <string>/Users/YOURNAME/.claude-dock/claude_dock_server.py</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>/Users/YOURNAME/.claude-dock/companion.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/YOURNAME/.claude-dock/companion.err.log</string>
+</dict>
+</plist>

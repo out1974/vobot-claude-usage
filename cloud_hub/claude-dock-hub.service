@@ -1,0 +1,23 @@
+# systemd unit for the hub on a Linux VPS.
+# 1. Put claude_dock_hub.py at /opt/claude-dock/claude_dock_hub.py
+# 2. Edit the token below (same secret used by pushers and the dock URL).
+# 3. sudo cp claude-dock-hub.service /etc/systemd/system/
+#    sudo systemctl daemon-reload && sudo systemctl enable --now claude-dock-hub
+# 4. Check: systemctl status claude-dock-hub   /   curl -s localhost:8899/
+
+[Unit]
+Description=Claude Dock usage hub
+After=network-online.target
+
+[Service]
+Environment=CLAUDE_DOCK_TOKEN=CHANGE-ME-LONG-RANDOM-SECRET
+Environment=PORT=8899
+Environment=CLAUDE_DOCK_STATE=/var/lib/claude-dock/hub_state.json
+ExecStart=/usr/bin/python3 /opt/claude-dock/claude_dock_hub.py
+Restart=always
+RestartSec=3
+DynamicUser=yes
+StateDirectory=claude-dock
+
+[Install]
+WantedBy=multi-user.target

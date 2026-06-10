@@ -1,0 +1,7 @@
+# Caddy gives you automatic HTTPS (Let's Encrypt) in front of the hub.
+# Replace hub.example.com with your domain (A-record -> your VPS IP).
+# Install Caddy, put this at /etc/caddy/Caddyfile, then: sudo systemctl reload caddy
+
+hub.example.com {
+    reverse_proxy 127.0.0.1:8899
+}

@@ -7,7 +7,11 @@ an In/Out split, a 7 / 14 / 30‑day total + average, and a daily bar chart.
 > ⚠️ **Not affiliated with or endorsed by Anthropic or Vobot.** "Claude" is a trademark of
 > Anthropic, "Vobot" of its respective owner. You use your own account, logs, and API keys.
 
-A browser layout mock lives in [`preview/index.html`](preview/index.html) — open it to see the design.
+<p align="center">
+  <img src="docs/preview.svg" alt="Two-panel dashboard: Claude Code and API token usage" width="460">
+</p>
+
+<sub>Mock-up of the on-device layout. A browser version is in [`preview/index.html`](preview/index.html); a real device photo is welcome — drop one into `docs/` and link it here.</sub>
 
 ---
 

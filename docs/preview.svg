@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" width="460" role="img" aria-label="Vobot Mini Dock showing Claude Code and API token usage">
+  <rect x="0" y="0" width="320" height="240" rx="12" fill="#000000"/>
+
+  <!-- Panel A: Claude Code -->
+  <text x="10" y="21" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#FF8A3D">Claude Code</text>
+  <text x="310" y="20" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#9AA0A6" text-anchor="end">7d 119.49M</text>
+  <text x="10" y="49" font-family="Helvetica,Arial,sans-serif" font-size="27" font-weight="700" fill="#FFFFFF">66.65M</text>
+  <text x="116" y="49" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#9AA0A6">today</text>
+  <text x="10" y="72" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#FF8A3D">In 66.23M  Out 412.7K</text>
+  <text x="10" y="90" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#9AA0A6">avg 17.07M/day</text>
+  <g fill="#FF8A3D">
+    <rect x="182" y="92" width="14" height="8"/>
+    <rect x="200" y="94" width="14" height="6"/>
+    <rect x="218" y="88" width="14" height="12"/>
+    <rect x="236" y="93" width="14" height="7"/>
+    <rect x="254" y="34" width="14" height="66"/>
+    <rect x="272" y="82" width="14" height="18"/>
+    <rect x="290" y="58" width="14" height="42"/>
+  </g>
+
+  <line x1="0" y1="116" x2="320" y2="116" stroke="#333333" stroke-width="1"/>
+
+  <!-- Panel B: API -->
+  <text x="10" y="141" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#0BB4ED">API</text>
+  <text x="310" y="140" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#9AA0A6" text-anchor="end">7d 0</text>
+  <text x="10" y="169" font-family="Helvetica,Arial,sans-serif" font-size="27" font-weight="700" fill="#FFFFFF">0</text>
+  <text x="34" y="169" font-family="Helvetica,Arial,sans-serif" font-size="13" fill="#9AA0A6">today</text>
+  <text x="10" y="192" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#0BB4ED">In 0  Out 0</text>
+  <text x="10" y="210" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#9AA0A6">avg 0/day</text>
+  <text x="250" y="179" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#9AA0A6" text-anchor="middle">no usage</text>
+</svg>

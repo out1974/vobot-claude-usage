@@ -20,3 +20,5 @@ files:
   include:
     - __init__.py
     - service.py
+    - local_service.py
+    - resources/icon.png

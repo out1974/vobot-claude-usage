@@ -21,6 +21,9 @@ from . import local_service    # Claude Code usage (Mac companion / cloud hub)
 
 NAME = "Claude Usage"
 CAN_BE_AUTO_SWITCHED = True
+# Resource paths use NAME (the platform renames the app folder to NAME on install).
+# Literal string (not an f-string) so the launcher can read the icon path statically.
+ICON = "A:apps/Claude Usage/resources/icon.png"
 
 _SCR_WIDTH, _SCR_HEIGHT = peripherals.screen.screen_resolution
 _UPDATE_INTERVAL = const(600)   # refresh every 10 minutes
